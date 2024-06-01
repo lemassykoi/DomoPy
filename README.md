@@ -11,6 +11,8 @@ pip install DomoPy
 
 ### Usage
 ```
+from DomoPy.DomoPy import DomoPy
+
 domoticz_ip        = '192.168.0.1'
 domoticz_port      = '8080'
 domoticz_user      = 'user'
