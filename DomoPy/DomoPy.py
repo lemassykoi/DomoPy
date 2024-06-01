@@ -58,7 +58,11 @@ class DomoPy:
 
     def getVersion(self):
         j=self.__Requests('getversion')
-        return j['HaveUpdate'], j['version'], j['status']
+        return j['version']
+
+    def haveUpdate(self):
+        j=self.__Requests('getversion')
+        return j['HaveUpdate']
 
     def getStatus(self):
         j=self.__Requests('getversion')
